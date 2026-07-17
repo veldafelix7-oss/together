@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary-pink: #FF8DA1;
+  --color-dark-bg: #0B0B0B;
+}
+
+/* Custom Scrollbar to match dark premium theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Base styles to prevent scroll visual clutter and keep phone simulation neat */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}

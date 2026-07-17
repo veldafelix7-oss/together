@@ -1,0 +1,10 @@
+{
+  "name": "Together",
+  "description": "Aplikasi bersama pasangan premium, minimalis, dan elegan.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
