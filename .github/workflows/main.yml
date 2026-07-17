@@ -1,8 +1,6 @@
 name: Build APK
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -14,16 +12,13 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - run: npm ci
-
       - run: npm run build
-
       - run: npx cap sync android
 
       - run: chmod +x android/gradlew
-
       - run: cd android && ./gradlew assembleDebug
 
       - uses: actions/upload-artifact@v4
