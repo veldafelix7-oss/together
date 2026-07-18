@@ -1,0 +1,28 @@
+{
+  "project_info": {
+    "project_number": "398325580023",
+    "project_id": "together-db250",
+    "storage_bucket": "together-db250.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398325580023:android:1e9ad7632be9f3428293f2",
+        "android_client_info": {
+          "package_name": "com.together.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoJomPuAX_Gra65LyDKeMZLUhT278-TlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
