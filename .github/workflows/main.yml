@@ -19,10 +19,11 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - run: node -v
       - run: npm ci
       - run: npm run build
       - run: npx cap sync android
+
+      - run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > android/app/google-services.json
 
       - run: chmod +x android/gradlew
       - run: cd android && ./gradlew assembleDebug
